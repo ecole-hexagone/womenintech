@@ -18,10 +18,7 @@ const BookingGuide: React.FC = () => {
         </svg>
         Guide de l'explorateur : comment réserver vos sessions ?
       </h3>
-      <p className="absolute top-2 -right-11 mb-11 w-40 text-white text-center  text-xl md:text-xl bg-secondary px-4 py-1 rounded-lg transform rotate-45">
-        Repas inclus
-      </p>
-
+     
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
         <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-blue-50 p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
           <div className="w-12 h-12 bg-[#8cc6e9] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">

@@ -7,13 +7,12 @@ const Home: React.FC = () => {
   return (
     <>
       <HeroSection
-        title="Professionnels RH, venez vous inspirer, vous challenger et préparer votre rentrée 2025.
-        Pendant 3 jours assistez à des ateliers, des conférences, des échanges à chaleur ajoutée, au sein du    Châteauform' Learning Lab de la Défense "
-        backgroundImage="parasol.webp"
-        paragraphEmphasized1="Prendre du recul, monter en compétences et partager entre pairs :"
-        paragraph1=" c’est exactement ce que vous réserve le HR Summer Session,"
-        paragraphEmphasized2="dans un lieu à chaleur ajoutée"
-        paragraph2="pensé pour inspirer, connecter et faire progresser sans pression… mais avec conviction."
+        title="Plongez au cœur du monde de l’IT avec deux journées inspirantes à l’École Hexagone !"
+        backgroundImage="parasol.png"
+        paragraphEmphasized1=""
+        paragraph1=" Au programme : "
+        paragraphEmphasized2="rencontres avec des femmes passionnées, ateliers pratiques en cybersécurité, IA et data, et échanges autour des métiers du numérique."
+        paragraph2="Une expérience unique pour oser l’informatique, découvrir ses opportunités et se projeter dans un avenir digital."
         buttonText="Réservez vos sessions"
         buttonLink="/programme"
         date="Du 07 au 09 Juillet"

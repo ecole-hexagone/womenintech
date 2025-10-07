@@ -43,7 +43,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute inset-0 z-0">
         <img
           src={backgroundImage}
-          alt="LEARNS RH Summer Camp"
+          alt="Women In Tech forum de l'École Hexagone"
           className="w-full h-full object-cover object-top opacity-30"
         />
       </div>
@@ -51,9 +51,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="span-col-1 md:pt-32 md:pb-11 relative z-10">
           <div className="max-w-2xl text-white mx-auto">
             <img
-              src="logos/logo-summerSession.webp"
+              src="logos/logo-womenIntech.webp"
               className="lg:hidden pb-11"
-              alt="Logo des RH summer session"
+              alt="Logo de Women In Tech de l'École Hexagone"
             />
             <div className="flex flex-col items-start mb-6">
               <h1 className="text-xl md:text-xl 2xl:text-2xl font-bold mb-2 text-white drop-shadow-md">
@@ -100,9 +100,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="gap-38 span-col-1  flex flex-col justify-between pt-11 relative z-10">
           <div className="self-center  md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1">
             <img
-              src="logos/logo-summerSession.webp"
+              src="logos/logo-womenIntech.webp"
               className="hidden lg:block w-[35rem] span-col-1 span-row-1 mb-20"
-              alt="Logo de RH summer session"
+              alt="Logo du forum Women In Tech de l'École Hexagone"
             />
           </div>
           <div className="w-full flex justify-center lg:justify-end mx-auto lg:mx-0 md:justify-end  gap-3 items-center  lg:mt-20">

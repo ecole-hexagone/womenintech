@@ -38,7 +38,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section
       id="hero"
-      className="relative bg-gradient-to-l from-secondary to-transparent overflow-hidden flex items-center justify-center h-[100%] px-4 sm:px-6 md:px-11 lg:px-0 py-11"
+      className="relative bg-gradient-to-r from-transparent to-secondary-dark overflow-hidden flex items-center justify-center h-[100%] px-4 sm:px-6 md:px-11 lg:px-0 py-11"
     >
       <div className="absolute inset-0 z-0">
         <img
@@ -101,11 +101,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="self-center  md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1">
             <img
               src="logos/logo-womenIntech.webp"
-              className="hidden lg:block w-[35rem] span-col-1 span-row-1 mb-20"
+              className="hidden lg:block w-[35rem] span-col-1 span-row-1 mb-20 -mt-20"
               alt="Logo du forum Women In Tech de l'École Hexagone"
             />
           </div>
-          <div className="w-full flex justify-center lg:justify-end mx-auto lg:mx-0 md:justify-end  gap-3 items-center  lg:mt-20">
+        {/*<div className="w-full flex justify-center lg:justify-end mx-auto lg:mx-0 md:justify-end  gap-3 items-center  lg:mt-20">
             <img
               src="logos/logo-learns.svg"
               className="self-center w-1/4"
@@ -121,7 +121,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               className="w-1/4 max-w-[8.5rem] 2xl:max-w-[10rem] self-center lg:w-full"
               alt="Logo de chateauForm"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <>
       <HeroSection
         title="Plongez au cœur du monde de l’IT avec deux journées inspirantes à l’École Hexagone !"
-        backgroundImage="parasol.png"
+        backgroundImage="home-hero.webp"
         paragraphEmphasized1=""
         paragraph1=" Au programme : "
         paragraphEmphasized2="rencontres avec des femmes passionnées, ateliers pratiques en cybersécurité, IA et data, et échanges autour des métiers du numérique."

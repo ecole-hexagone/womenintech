@@ -1,7 +1,7 @@
 const BookingGuide: React.FC = () => {
   return (
-    <div className="relative bg-white rounded-xl shadow-lg p-8 mb-16 border-2 border-[#8cc6e9] bg-[url('https://www.transparenttextures.com/patterns/clean-textile.png')]">
-      <h3 className="text-2xl font-bold text-[#8cc6e9] mb-4 flex items-center">
+    <div className="relative bg-white rounded-xl shadow-lg p-8 mb-16 border-2 border-[#8cc6e9]">
+      <h3 className="text-2xl font-bold text-primary mb-4 flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="hidden md:block h-8 w-8 mr-2 text-[#FF1C66]"
@@ -25,10 +25,10 @@ const BookingGuide: React.FC = () => {
             <span className="text-white text-xl font-bold">1</span>
           </div>
           <div>
-            <h4 className="text-lg font-bold text-[#8cc6e9] mb-2">
+            <h4 className="text-lg font-bold text-primary mb-2">
               Réservez vos journées
             </h4>
-            <span className="font-semibold text-[#FF1C66]">Deux options :</span>
+            <span className="font-semibold text-secondary">Deux options :</span>
             <ul className="list-disc pl-5 space-y-1 mb-3">
               <li className="ml-3">Journée complète: 200€ HT</li>
               <li className="ml-3">Pass 3 jours : 500€ HT</li>

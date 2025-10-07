@@ -18,14 +18,14 @@ export default {
       },
       colors: {
         primary: {
-          DEFAULT: "#8cc6e9",
-          light: "#67b8d8",
-          dark: "#8ACDEA",
+          DEFAULT: "#C3C3E6",
+          light: "#EDEDF7",
+          dark: "#9A9AD5",
         },
         secondary: {
-          DEFAULT: "#FF1C66",
-          light: "#e91a5d",
-          dark: "#d91854",
+          DEFAULT: "#fe2e8e",
+          light: "#FEAED4",
+          dark: "#DE0269",
         },
       },
     },

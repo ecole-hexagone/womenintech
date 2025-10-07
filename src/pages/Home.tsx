@@ -8,14 +8,14 @@ const Home: React.FC = () => {
     <>
       <HeroSection
         title="Plongez au cœur du monde de l’IT avec deux journées inspirantes à l’École Hexagone !"
-        backgroundImage="parasol.png"
+        backgroundImage="home-hero.webp"
         paragraphEmphasized1=""
         paragraph1=" Au programme : "
         paragraphEmphasized2="rencontres avec des femmes passionnées, ateliers pratiques en cybersécurité, IA et data, et échanges autour des métiers du numérique."
         paragraph2="Une expérience unique pour oser l’informatique, découvrir ses opportunités et se projeter dans un avenir digital."
         buttonText="Réservez vos sessions"
         buttonLink="/programme"
-        date="Du 07 au 09 Juillet"
+        date="Le 27 & 28 Novembre 2025"
       />
       <WorkshopCalendar />
       <BenefitsSection />

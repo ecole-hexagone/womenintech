@@ -91,7 +91,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
           <WorkshopDetails workshop={workshop} />
         )}
       </td>
-      <td className="py-3 md:py-4 px-2 md:px-4 text-sm md:text-base">
+       {/*<td className="py-3 md:py-4 px-2 md:px-4 text-sm md:text-base">
         <div className="flex items-center">
           <span className="bg-primary text-white p-1 rounded-full mr-2">
             <svg
@@ -111,7 +111,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
           </span>
           <span className="font-semibold">{workshop.intervenant}</span>
         </div>
-      </td>
+      </td>*/}
     </tr>
   );
 };

@@ -32,9 +32,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-primary to-primary-light text-white shadow-md z-50">
-      <div className="bg-secondary text-white text-center py-1 font-bold tracking-widest text-sm">
-        <p>SAVE THE DATE! Du 07 Juillet au 09 Juillet !</p>
+    <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-primary-dark to-primary text-white shadow-md z-50">
+      <div className="bg-secondary-dark text-white text-center py-1 font-bold tracking-widest text-sm">
+        <p>SAVE THE DATE! Le 27 et 28 Novembre !</p>
       </div>
 
       <div className="container w-full max-w-[100rem] mx-auto p-4 flex justify-between items-center md:h-28 ">
@@ -58,9 +58,9 @@ const Header: React.FC = () => {
             }}
           >
             <img
-              src="logos/logo-header.webp"
-              className=""
-              alt="Logo de LearnsRH"
+              src="logos/logo-hexa.svg"
+              className="h-20"
+              alt="Logo de École Hexagone"
             />
           </Link>
         </div>

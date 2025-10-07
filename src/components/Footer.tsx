@@ -29,11 +29,11 @@ const Footer: React.FC = () => {
                 />
               </svg>
               <div>
-                <span className="text-white">HR</span>
+                <span className="text-white font-carlson">WOMEN</span>
                 <span className="text-[#FF1C66] italic font-cursive">
-                  Summer
+                  in
                 </span>
-                <span className="text-white">SESSION</span>
+                <span className="text-white">TECH</span>
               </div>
             </div>
             <p className="mb-6 bg-white text-white bg-opacity-10 p-4 rounded-lg">

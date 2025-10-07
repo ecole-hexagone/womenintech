@@ -5,7 +5,7 @@ import { WorkshopRow } from "./WorkshopRow";
 import { ThemeIcon } from "./ThemeIcon";
 import { SpeakerIcon } from "./SpeakerIcon";
 
-const getThemeIconFunction: ThemeIconFunction = (theme: string) => {
+const getThemeIconFunction: ThemeIconFunction = (theme) => {
   return <ThemeIcon theme={theme} />;
 };
 
@@ -27,19 +27,32 @@ export const DaySection: React.FC<DaySectionProps> = ({
   isAfternoonWorkshopSelected,
 }) => {
   const firstWorkshop = workshops[0];
+  if (!firstWorkshop) {
+    return null;
+  }
+
+  const startsWith = (value: string | undefined, prefix: string) =>
+    (value ?? "").toLowerCase().startsWith(prefix.toLowerCase());
+  const getHorairesLabel = (value?: string) =>
+    value && value.trim().length > 0 ? value : "À préciser";
+  const getTitleLabel = (value?: string) =>
+    value && value.trim().length > 0 ? value : "À venir...";
+  const getSpeakerLabel = (value?: string) =>
+    value && value.trim().length > 0 ? value : "À annoncer";
+
   const morningWorkshops = workshops.filter(
     (w) =>
-      (w.horaires.startsWith("9") || w.horaires.startsWith("11")) &&
+      (startsWith(w.horaires, "9") || startsWith(w.horaires, "11")) &&
       !w.isSpecialLunch
   );
   const lunchWorkshops = workshops.filter(
     (w) =>
       w.isSpecialLunch ||
-      (w.horaires.startsWith("12") && !w.horaires.startsWith("14"))
+      (startsWith(w.horaires, "12") && !startsWith(w.horaires, "14"))
   );
   const afternoonWorkshops = workshops.filter(
     (w) =>
-      (w.horaires.startsWith("14") || w.horaires.startsWith("16")) &&
+      (startsWith(w.horaires, "14") || startsWith(w.horaires, "16")) &&
       !w.isSpecialLunch
   );
 
@@ -209,7 +222,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                           />
                         </svg>
-                        {workshop.horaires}
+                        {getHorairesLabel(workshop.horaires)}
                       </td>
                       <td className="py-4 px-4">
                         <div className="flex items-center">
@@ -224,7 +237,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                           </span>
                           <span>
                             <span className="font-semibold">
-                              {workshop.titre}
+                              {getTitleLabel(workshop.titre)}
                             </span>
                             {workshop.format && (
                               <span className="ml-2 bg-secondary text-white text-xs px-2 py-1 rounded-full">
@@ -249,7 +262,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                             {getSpeakerIconFunction()}
                           </span>
                           <span className="font-semibold">
-                            {workshop.intervenant}
+                            {getSpeakerLabel(workshop.intervenant)}
                           </span>
                         </div>
                       </td>
@@ -317,7 +330,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                           />
                         </svg>
-                        {workshop.horaires}
+                        {getHorairesLabel(workshop.horaires)}
                       </td>
                       <td className="py-4 px-4">
                         <div className="flex items-center">
@@ -332,7 +345,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                           </span>
                           <span>
                             <span className="font-semibold">
-                              {workshop.titre}
+                              {getTitleLabel(workshop.titre)}
                             </span>
                             <span className="ml-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
                               Inclus
@@ -352,7 +365,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                             {getSpeakerIconFunction()}
                           </span>
                           <span className="font-semibold">
-                            {workshop.intervenant}
+                            {getSpeakerLabel(workshop.intervenant)}
                           </span>
                         </div>
                       </td>
@@ -419,7 +432,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                       day,
                       workshop.id
                     );
-                    const isLongWorkshop = workshop.titre.includes(
+                    const isLongWorkshop = (workshop.titre ?? "").includes(
                       "Le RH est il un psy ?"
                     );
 

@@ -52,7 +52,7 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
       ) || [];
 
     return selectedWorkshopsForDay.some((workshop) =>
-      workshop.titre.includes("Le RH est il un psy ?")
+      (workshop.titre ?? "").includes("Le RH est il un psy ?")
     );
   };
 

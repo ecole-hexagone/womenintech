@@ -1,8 +1,8 @@
 interface ThemeIconProps {
-  theme: string;
+  theme?: string;
 }
 
-export const ThemeIcon: React.FC<ThemeIconProps> = ({ theme }) => {
+export const ThemeIcon: React.FC<ThemeIconProps> = ({ theme = "" }) => {
   switch (theme) {
     case "Rémunération":
       return (

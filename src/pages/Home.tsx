@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         paragraph2="Une expérience unique pour oser l’informatique, découvrir ses opportunités et se projeter dans un avenir digital."
         buttonText="Réservez vos sessions"
         buttonLink="/programme"
-        date="Du 07 au 09 Juillet"
+        date="Le 27 & 28 Novembre 2025"
       />
       <WorkshopCalendar />
       <BenefitsSection />

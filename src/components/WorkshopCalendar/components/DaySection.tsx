@@ -20,21 +20,10 @@ export const DaySection: React.FC<DaySectionProps> = ({
   onWorkshopSelect,
 }) => {
   const firstWorkshop = workshops[0];
-  const morningWorkshops = workshops.filter(
-    (w) =>
-      (w.horaires.startsWith("9") || w.horaires.startsWith("11")) &&
-      !w.isSpecialLunch
-  );
-  const lunchWorkshops = workshops.filter(
-    (w) =>
-      w.isSpecialLunch ||
-      (w.horaires.startsWith("12") && !w.horaires.startsWith("14"))
-  );
-  const afternoonWorkshops = workshops.filter(
-    (w) =>
-      (w.horaires.startsWith("14") || w.horaires.startsWith("16")) &&
-      !w.isSpecialLunch
-  );
+
+  if (!firstWorkshop) {
+    return null;
+  }
 
   return (
     <div
@@ -45,8 +34,8 @@ export const DaySection: React.FC<DaySectionProps> = ({
       <div
         className={`${
           day === "jour2"
-            ? "bg-gradient-to-r from-secondary to-secondary-light"
-            : "bg-gradient-to-r from-primary to-primary-light"
+            ? "bg-gradient-to-r from-secondary-dark via-secondary to-secondary-light"
+            : "bg-gradient-to-r from-primary-dark via-primary to-primary-light"
         } text-white p-3 md:p-4 flex items-center justify-between cursor-pointer`}
         onClick={() => onToggleExpansion(day)}
       >
@@ -93,107 +82,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
           className="p-3 md:p-4 bg-[url('https://www.transparenttextures.com/patterns/clean-textile.png')] overflow-x-auto"
           style={{ scrollbarWidth: "thin" }}
         >
-          {morningWorkshops.length > 0 && (
-            <div className="mb-6">
-              <h4 className="font-bold text-primary mb-3 flex items-center text-base md:text-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 md:h-5 md:w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-                Conférences du matin
-              </h4>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse min-w-[800px] mb-6">
-                  <thead>
-                    <tr className="bg-blue-50 text-primary">
-                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-blue-100 font-bold w-1/4 text-sm md:text-base">
-                        Horaire
-                      </th>
-                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-blue-100 font-bold w-1/2 text-sm md:text-base">
-                        Conférences
-                      </th>
-                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-blue-100 font-bold w-1/4 text-sm md:text-base">
-                        Intervenant(e)
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {morningWorkshops.map((workshop) => (
-                      <WorkshopRow
-                        key={workshop.id}
-                        workshop={workshop}
-                        selectedWorkshop={selectedWorkshop}
-                        onWorkshopSelect={onWorkshopSelect}
-                        bgColor="bg-blue-50"
-                      />
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          )}
-
-          {lunchWorkshops.length > 0 && (
-            <div className="mb-6">
-              <h4 className="font-bold text-primary mb-3 flex items-center text-base md:text-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 md:h-5 md:w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                Pause déjeuner spéciale
-              </h4>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse min-w-[800px] mb-6">
-                  <thead>
-                    <tr className="bg-green-50 text-primary">
-                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-green-100 font-bold w-1/4 text-sm md:text-base">
-                        Horaire
-                      </th>
-                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-green-100 font-bold w-1/2 text-sm md:text-base">
-                        Événement
-                      </th>
-                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-green-100 font-bold w-1/4 text-sm md:text-base">
-                        Intervenant(e)
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {lunchWorkshops.map((workshop) => (
-                      <WorkshopRow
-                        key={workshop.id}
-                        workshop={workshop}
-                        selectedWorkshop={selectedWorkshop}
-                        onWorkshopSelect={onWorkshopSelect}
-                        bgColor="bg-green-50"
-                      />
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          )}
-
-          {afternoonWorkshops.length > 0 && (
+          {workshops.length > 0 ? (
             <div>
               <h4 className="font-bold text-primary mb-3 flex items-center text-base md:text-lg">
                 <svg
@@ -207,39 +96,43 @@ export const DaySection: React.FC<DaySectionProps> = ({
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                   />
                 </svg>
-                Ateliers de l'après-midi
+                Programme de la journée
               </h4>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse min-w-[800px]">
                   <thead>
-                    <tr className="bg-orange-50 text-primary">
-                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-orange-100 font-bold w-1/4 text-sm md:text-base">
+                    <tr className="bg-blue-50 text-primary">
+                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-blue-100 font-bold w-1/4 text-sm md:text-base">
                         Horaire
                       </th>
-                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-orange-100 font-bold w-1/2 text-sm md:text-base">
-                        Ateliers
+                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-blue-100 font-bold w-1/2 text-sm md:text-base">
+                        Activité
                       </th>
-                      <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-orange-100 font-bold w-1/4 text-sm md:text-base">
+                      {/*<th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-blue-100 font-bold w-1/4 text-sm md:text-base">
                         Intervenant(e)
-                      </th>
+                      </th>*/}
                     </tr>
                   </thead>
                   <tbody>
-                    {afternoonWorkshops.map((workshop) => (
+                    {workshops.map((workshop, index) => (
                       <WorkshopRow
                         key={workshop.id}
                         workshop={workshop}
                         selectedWorkshop={selectedWorkshop}
                         onWorkshopSelect={onWorkshopSelect}
-                        bgColor="bg-orange-50"
+                        bgColor={index % 2 === 0 ? "bg-white" : "bg-blue-50"}
                       />
                     ))}
                   </tbody>
                 </table>
               </div>
+            </div>
+          ) : (
+            <div className="text-center text-gray-500">
+              Aucun atelier planifié pour cette journée.
             </div>
           )}
         </div>

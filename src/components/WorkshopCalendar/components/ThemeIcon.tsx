@@ -1,10 +1,10 @@
 interface ThemeIconProps {
-  theme: string;
+  theme?: string;
   className?: string;
 }
 
 export const ThemeIcon: React.FC<ThemeIconProps> = ({
-  theme,
+  theme = "",
   className = "h-5 w-5",
 }) => {
   switch (theme) {

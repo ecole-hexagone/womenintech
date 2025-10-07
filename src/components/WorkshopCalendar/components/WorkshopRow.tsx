@@ -15,6 +15,11 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
   onWorkshopSelect,
   bgColor = "bg-blue-50",
 }) => {
+  const horaires = workshop.horaires ?? "À préciser";
+  const intervenant = workshop.intervenant && workshop.intervenant.trim() !== ""
+    ? workshop.intervenant
+    : "À annoncer";
+
   return (
     <tr className={`border-b ${bgColor}`}>
       <td className="py-3 md:py-4 px-2 md:px-4 font-semibold text-primary flex items-center text-sm md:text-base">
@@ -32,7 +37,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-        {workshop.horaires}
+        {horaires}
       </td>
       <td className="py-3 md:py-4 px-2 md:px-4 text-sm md:text-base">
         <div className="flex items-center">
@@ -91,7 +96,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
           <WorkshopDetails workshop={workshop} />
         )}
       </td>
-       {/*<td className="py-3 md:py-4 px-2 md:px-4 text-sm md:text-base">
+      <td className="py-3 md:py-4 px-2 md:px-4 text-sm md:text-base">
         <div className="flex items-center">
           <span className="bg-primary text-white p-1 rounded-full mr-2">
             <svg
@@ -109,9 +114,9 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
               />
             </svg>
           </span>
-          <span className="font-semibold">{workshop.intervenant}</span>
+          <span className="font-semibold">{intervenant}</span>
         </div>
-      </td>*/}
+      </td>
     </tr>
   );
 };

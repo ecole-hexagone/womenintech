@@ -2,10 +2,10 @@ export interface Workshop {
   id: string;
   jour: string;
   date: string;
-  horaires: string;
-  theme: string;
+  horaires?: string;
+  theme?: string;
   titre?: string;
-  intervenant: string;
+  intervenant?: string;
   format?: string;
   "dot-1"?: string;
   "dot-2"?: string;

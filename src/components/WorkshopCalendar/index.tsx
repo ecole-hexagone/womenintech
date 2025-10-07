@@ -40,7 +40,7 @@ const WorkshopCalendar: React.FC<WorkshopCalendarProps> = () => {
       <div className="flex flex-col items-center mb-6">
         <h3 className="w-auto mx-auto text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-6 md:mb-11 relative inline-block text-center">
           Votre programme de la{" "}
-          <span className="font-carlson font-black">Women In Tech</span>
+          <span className="font-carlson font-black">Women & Tech</span>
           <div className="absolute -bottom-3 left-0 right-0 h-1 bg-secondary rounded-full transform -rotate-1"></div>
         </h3>
         <p className="text-sm md:text-base text-center px-4">

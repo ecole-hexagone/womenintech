@@ -9,6 +9,19 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
   getThemeIcon,
   getSpeakerIcon,
 }) => {
+  const horairesLabel =
+    workshop.horaires && workshop.horaires.trim().length > 0
+      ? workshop.horaires
+      : "À préciser";
+  const titleLabel =
+    workshop.titre && workshop.titre.trim().length > 0
+      ? workshop.titre
+      : "À venir...";
+  const speakerLabel =
+    workshop.intervenant && workshop.intervenant.trim().length > 0
+      ? workshop.intervenant
+      : "À annoncer";
+
   return (
     <tr
       className={`border-b border-orange-50 transition-colors duration-150 cursor-pointer ${
@@ -46,10 +59,10 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          {workshop.horaires}
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+        {horairesLabel}
         </div>
       </td>
       <td className="py-4 px-4">
@@ -62,7 +75,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
             {getThemeIcon(workshop.theme)}
           </span>
           <span>
-            <span className="font-semibold">{workshop.titre}</span>
+            <span className="font-semibold">{titleLabel}</span>
             {workshop.format && (
               <span className="ml-2 bg-secondary text-white text-xs px-2 py-1 rounded-full">
                 {workshop.format}
@@ -90,7 +103,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
           >
             {getSpeakerIcon()}
           </span>
-          <span className="font-semibold">{workshop.intervenant}</span>
+          <span className="font-semibold">{speakerLabel}</span>
         </div>
       </td>
     </tr>

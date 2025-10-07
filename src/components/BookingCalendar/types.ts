@@ -20,9 +20,9 @@ export interface WorkshopRowProps {
   canSelect: boolean;
   isLongWorkshop: boolean;
   onSelect: () => void;
-  getThemeIcon: (theme: string) => JSX.Element;
+  getThemeIcon: (theme?: string) => JSX.Element;
   getSpeakerIcon: () => JSX.Element;
 }
 
-export type ThemeIconFunction = (theme: string) => JSX.Element;
+export type ThemeIconFunction = (theme?: string) => JSX.Element;
 export type SpeakerIconFunction = () => JSX.Element;

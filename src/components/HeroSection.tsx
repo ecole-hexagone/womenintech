@@ -43,7 +43,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute inset-0 z-0">
         <img
           src={backgroundImage}
-          alt="Women In Tech forum de l'École Hexagone"
+          alt="Women & Tech forum de l'École Hexagone"
           className="w-full h-full object-cover object-top opacity-30"
         />
       </div>
@@ -53,7 +53,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <img
               src="logos/logo-womenIntech.webp"
               className="lg:hidden pb-11"
-              alt="Logo de Women In Tech de l'École Hexagone"
+              alt="Logo du forum Women & Tech de l'École Hexagone"
             />
             <div className="flex flex-col items-start mb-6">
               <h1 className="text-xl md:text-xl 2xl:text-2xl font-bold mb-2 text-white drop-shadow-md">
@@ -102,7 +102,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <img
               src="logos/logo-womenIntech.webp"
               className="hidden lg:block w-[35rem] span-col-1 span-row-1 mb-20 -mt-20"
-              alt="Logo du forum Women In Tech de l'École Hexagone"
+              alt="Logo du forum Women & Tech de l'École Hexagone"
             />
           </div>
         {/*<div className="w-full flex justify-center lg:justify-end mx-auto lg:mx-0 md:justify-end  gap-3 items-center  lg:mt-20">

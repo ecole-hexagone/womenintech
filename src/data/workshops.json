@@ -2,6 +2,7 @@
   {
     "id": "j1a1",
     "intervenant": "",
+    "theme": "Inspiration",
     "highlighted": true,
     "titre": "Icebreaker",
     "dot-1": "'Vrai ou Faux sur l’informatique ?' : un quiz interactif pour briser la glace et casser les stéréotypes.",
@@ -12,6 +13,7 @@
   {
     "id": "j1a2",
     "intervenant": "Noemie Aubron",
+    "theme": "Inspiration",
     "highlighted": true,
     "titre": "Table ronde inspirante",
     "dot-1": "Parcours de femmes dans l’IT (alumnis, expertes en IA, cybersécurité, data).",
@@ -21,15 +23,17 @@
   {
     "id": "j1a3",
     "intervenant": "",
+    "theme": "Inspiration",
     "highlighted": false,
     "titre": "Discussion ouverte : 'Pourquoi pas moi ?'",
     "dot-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "date": "27-Nov",
     "jour": "jour1"
   },
-    {
+  {
     "id": "j1a4",
     "intervenant": "",
+    "theme": "Découverte IT",
     "highlighted": false,
     "titre": "Cartographier les métiers de l’IT",
     "dot-1": "Comprendre les grands domaines (cyber, data, IA, développement…).",
@@ -37,27 +41,30 @@
     "jour": "jour1",
     "horaires": "À partir de 13h30"
   },
-      {
+  {
     "id": "j1a5",
     "intervenant": "",
+    "theme": "Cybersécurité",
     "highlighted": false,
     "titre": " Comprendre la cyber",
     "dot-1": "Découvrir les enjeux de la cybersécurité et les métiers qui y sont liés.",
     "date": "27-Nov",
     "jour": "jour1"
   },
-      {
+  {
     "id": "j1a6",
     "intervenant": "",
+    "theme": "Numérique responsable",
     "highlighted": false,
     "titre": "Numérique responsable",
     "dot-1": "Réfléchir à l’impact environnemental et éthique du digital.",
     "date": "27-Nov",
     "jour": "jour1"
   },
-        {
+  {
     "id": "j1a7",
     "intervenant": "",
+    "theme": "Networking",
     "highlighted": false,
     "titre": "Networking",
     "dot-1": "Partage d'expériences autour d'un cocktail soft",
@@ -68,6 +75,7 @@
   {
     "id": "j2a1",
     "intervenant": "",
+    "theme": "Conférence",
     "highlighted": true,
     "titre": "Conférence : Droit & IA",
     "dot-1": "Comprendre les enjeux réglementaires entourant l'intelligence artificielle.",
@@ -79,6 +87,7 @@
   {
     "id": "j2a2",
     "intervenant": "",
+    "theme": "Échange collectif",
     "highlighted": false,
     "titre": "Échange collectif : perception de l’IA",
     "dot-1": "Comparer les perceptions avant et après la conférence.",
@@ -89,6 +98,7 @@
   {
     "id": "j2a3",
     "intervenant": "",
+    "theme": "Data",
     "highlighted": false,
     "titre": "Atelier 4 : Plonger dans la data",
     "dot-1": "Manipuler une base de données et en tirer des conclusions concrètes.",
@@ -100,6 +110,7 @@
   {
     "id": "j2a4",
     "intervenant": "",
+    "theme": "IA générative",
     "highlighted": false,
     "titre": "Atelier 5 : ChatGPT & IA générative",
     "dot-1": "Apprendre à utiliser efficacement l’IA conversationnelle au quotidien.",
@@ -110,6 +121,7 @@
   {
     "id": "j2a5",
     "intervenant": "",
+    "theme": "Cybersécurité",
     "highlighted": false,
     "titre": "Atelier 6 : Déjouer les menaces",
     "dot-1": "Tester ses réflexes cybersécurité : phishing, mots de passe, bonnes pratiques.",
@@ -120,6 +132,7 @@
   {
     "id": "j2a6",
     "intervenant": "",
+    "theme": "Pitch collectif",
     "highlighted": true,
     "titre": "Pitch collectif : \"L’impact de l’IT sur le monde de demain\"",
     "dot-1": "Présenter les visions construites durant les ateliers de l'après-midi.",
@@ -130,6 +143,7 @@
   {
     "id": "j2a7",
     "intervenant": "Direction de l’École Hexagone",
+    "theme": "Conclusion",
     "highlighted": false,
     "titre": "Conclusion & présentation des formations",
     "dot-1": "Synthèse de la journée par la direction.",

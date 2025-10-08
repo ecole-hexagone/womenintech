@@ -50,7 +50,7 @@ const BenefitsSection: React.FC = () => {
               professionnels reconnus, avec une expérience terrain des enjeux RH
               d'aujourd'hui.
             </p>
-            <div className="mt-4 bg-blue-50 p-3 rounded-lg">
+            <div className="mt-4 bg-tertiary text-white p-3 rounded-lg">
               <p className="text-md font-bold text-[#8cc6e9]">
                 Plus de 15 intervenants spécialisés
               </p>
@@ -132,7 +132,7 @@ const BenefitsSection: React.FC = () => {
               outils concrets, découvrez des solutions applicables à vos enjeux
               RH.
             </p>
-            <div className="mt-4 bg-blue-50 p-3 rounded-lg">
+            <div className="mt-4 bg-tertiary text-white p-3 rounded-lg">
               <p className="text-md font-bold">Repartez avec du concret</p>
               <ul className="text-sm text-[#8cc6e9] font-semibold">
                 <li className="text-left">✔️ Des ressources pratiques</li>
@@ -161,7 +161,7 @@ const BenefitsSection: React.FC = () => {
             </div>
             <Link
               to="/programme"
-              className="inline-flex items-center bg-white text-[#8cc6e9] hover:bg-blue-50 font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
+              className="inline-flex items-center bg-white text-[#8cc6e9] hover:bg-tertiary text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -177,7 +177,7 @@ const BenefitsSection: React.FC = () => {
                   d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 />
               </svg>
-              Je réserve maintenant
+              Je m'inscris maintenant
             </Link>
           </div>
         </div>

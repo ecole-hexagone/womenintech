@@ -20,7 +20,7 @@ const BookingGuide: React.FC = () => {
       </h3>
      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-blue-50 p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
+        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-tertiary text-white p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
           <div className="w-12 h-12 bg-[#8cc6e9] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
             <span className="text-white text-xl font-bold">1</span>
           </div>
@@ -45,7 +45,7 @@ const BookingGuide: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-blue-50 p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
+        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-tertiary text-white p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
           <div className="w-12 h-12 bg-[#8cc6e9] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
             <span className="text-white text-xl font-bold">2</span>
           </div>
@@ -62,7 +62,7 @@ const BookingGuide: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-blue-50 p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
+        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-tertiary text-white p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
           <div className="w-12 h-12 bg-[#8cc6e9] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
             <span className="text-white text-xl font-bold">3</span>
           </div>
@@ -78,7 +78,7 @@ const BookingGuide: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-blue-50 p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
+        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center bg-tertiary text-white p-4 rounded-lg transform hover:scale-102 transition-transform duration-300">
           <div className="w-12 h-12 bg-[#FF1C66] rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
             <span className="text-white text-xl font-bold">4</span>
           </div>

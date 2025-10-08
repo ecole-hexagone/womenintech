@@ -310,7 +310,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                   </h4>
                   <ul className="space-y-2 text-sm">
                     {selectedDays.includes("jour1") && (
-                      <li className="bg-blue-50 p-3 rounded-lg">
+                      <li className="bg-tertiary text-white p-3 rounded-lg">
                         <div className="flex items-start justify-between">
                           <span className="flex items-start">
                             <span className="text-secondary mr-2">✓</span>
@@ -331,7 +331,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                       </li>
                     )}
                     {selectedDays.includes("jour2") && (
-                      <li className="bg-blue-50 p-3 rounded-lg">
+                      <li className="bg-tertiary text-white p-3 rounded-lg">
                         <div className="flex items-start justify-between">
                           <span className="flex items-start">
                             <span className="text-secondary mr-2">✓</span>
@@ -370,7 +370,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                       </li>
                     )}
                     {selectedDays.includes("jour3") && (
-                      <li className="bg-blue-50 p-3 rounded-lg">
+                      <li className="bg-tertiary text-white p-3 rounded-lg">
                         <div className="flex items-start justify-between">
                           <span className="flex items-start">
                             <span className="text-secondary mr-2">✓</span>
@@ -490,7 +490,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                     name="nom"
                     value={formData.nom}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                     placeholder="Votre nom"
                     required
                   />
@@ -508,7 +508,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                     name="prenom"
                     value={formData.prenom}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                     placeholder="Votre prénom"
                     required
                   />
@@ -527,7 +527,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                     placeholder="votreemail@entreprise.com"
                     required
                   />
@@ -545,7 +545,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                     name="telephone"
                     value={formData.telephone}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                     placeholder="Votre téléphone"
                   />
                 </div>
@@ -562,7 +562,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                     name="entreprise"
                     value={formData.entreprise}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                     placeholder="Nom de votre entreprise"
                     required
                   />
@@ -580,7 +580,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                     name="fonction"
                     value={formData.fonction}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                     placeholder="Votre fonction"
                   />
                 </div>
@@ -597,7 +597,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                     name="codePromo"
                     value={formData.codePromo}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                    className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                     placeholder="Si un code promotionnel vous a
                     été communiqué, merci de le saisir ici"
                   />

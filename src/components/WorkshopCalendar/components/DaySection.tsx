@@ -34,8 +34,8 @@ export const DaySection: React.FC<DaySectionProps> = ({
       <div
         className={`${
           day === "jour2"
-            ? "bg-gradient-to-r from-secondary-dark via-secondary to-secondary-light"
-            : "bg-gradient-to-r from-primary-dark via-primary to-primary-light"
+            ? "bg-gradient-to-r from-tertiary via-tertiary to-tertiary-light"
+            : "bg-gradient-to-r from-tertiary via-tertiary to-tertiary-light"
         } text-white p-3 md:p-4 flex items-center justify-between cursor-pointer`}
         onClick={() => onToggleExpansion(day)}
       >
@@ -104,7 +104,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse min-w-[800px]">
                   <thead>
-                    <tr className="bg-blue-50 text-primary">
+                    <tr className="bg-tertiary text-white text-primary">
                       <th className="py-2 md:py-3 px-2 md:px-4 text-left border-b border-blue-100 font-bold w-1/4 text-sm md:text-base">
                         Horaire
                       </th>
@@ -123,7 +123,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                         workshop={workshop}
                         selectedWorkshop={selectedWorkshop}
                         onWorkshopSelect={onWorkshopSelect}
-                        bgColor={index % 2 === 0 ? "bg-white" : "bg-blue-50"}
+                        bgColor={index % 2 === 0 ? "bg-white" : "bg-tertiary text-white"}
                       />
                     ))}
                   </tbody>

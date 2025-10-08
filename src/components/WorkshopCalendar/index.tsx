@@ -77,8 +77,7 @@ const WorkshopCalendar: React.FC<WorkshopCalendarProps> = () => {
 
       <div className="mt-6 flex justify-center">
         <button
-          onClick={() => navigate("/programme")}
-          className="bg-primary hover:bg-primary-dark text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors duration-300 flex items-center text-sm md:text-base"
+          data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className="bg-primary hover:bg-primary-dark text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors duration-300 flex items-center text-sm md:text-base"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

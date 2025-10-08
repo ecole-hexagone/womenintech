@@ -80,8 +80,7 @@ const Header: React.FC = () => {
           >
             Les intervenants
           </a>
-          <a href="#form">
-          <button className=" bg-tertiary hover:border-solid hover:border-2 border-tertiary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
+          <button data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className=" bg-tertiary hover:border-solid hover:border-2 border-tertiary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 mr-1"
@@ -96,7 +95,6 @@ const Header: React.FC = () => {
             </svg>
             Je m'inscris
           </button>
-          </a>
           <button
             className="w-1/2 mx-auto  bg-tertiary hover:border-solid hover:border-2 border-tertiary   text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
             popovertarget="contactForm"

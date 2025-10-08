@@ -1,11 +1,10 @@
 import HeroSection from "../components/HeroSection";
-import BenefitsSection from "../components/BenefitsSection";
 import SpeakersSection from "../components/SpeakersSection";
 import WorkshopCalendar from "../components/WorkshopCalendar/index";
 
 const Home: React.FC = () => {
   return (
-    <>
+    <div className="bg-gradient-to-b from-bg-white via-bg-white to-bg-tertiary">
       <HeroSection
         title="Plongez au cœur du monde de l’IT avec deux journées inspirantes à l’École Hexagone !"
         backgroundImage="home-hero.webp"
@@ -18,11 +17,10 @@ const Home: React.FC = () => {
         date="Le 27 & 28 Novembre 2025"
       />
       <WorkshopCalendar />
-      <BenefitsSection />
       <section id="speakers">
         <SpeakersSection />
       </section>
-    </>
+    </div>
   );
 };
 

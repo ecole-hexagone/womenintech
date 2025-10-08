@@ -32,9 +32,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-primary-dark to-primary text-white shadow-md z-50">
-      <div className="bg-secondary-dark text-white text-center py-1 font-bold tracking-widest text-sm">
-        <p>SAVE THE DATE! Le 27 et 28 Novembre !</p>
+    <header className="fixed top-0 left-0 right-0 bg-primary text-white shadow-md z-50">
+      <div className="bg-tertiary text-white text-center py-1 font-bold tracking-widest text-sm">
+        <p class="text-white">SAVE THE DATE! Le 27 et 28 Novembre !</p>
       </div>
 
       <div className="container w-full max-w-[100rem] mx-auto p-4 flex justify-between items-center md:h-28 ">
@@ -79,7 +79,8 @@ const Header: React.FC = () => {
           >
             Les intervenants
           </a>
-          <button className="bg-gradient-to-r from-[#8cc6e9] to-[#ff1c6824] border-solid border-2 border-secondary  hover:bg-secondary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
+          <a href="#form">
+          <button className=" bg-tertiary hover:border-solid hover:border-2 border-tertiary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 mr-1"
@@ -92,10 +93,11 @@ const Header: React.FC = () => {
                 clipRule="evenodd"
               />
             </svg>
-            <Link to="/programme">Je m'inscris</Link>
+            Je m'inscris
           </button>
+          </a>
           <button
-            className="w-1/2 mx-auto bg-gradient-to-l from-[#ff1c66] to-[#8cc5e912] bg-secondary border-solid border-2 border-secondary hover:bg-primary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+            className="w-1/2 mx-auto  bg-tertiary hover:border-solid hover:border-2 border-tertiary   text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
             popovertarget="contactForm"
           >
             <svg
@@ -155,25 +157,6 @@ const Header: React.FC = () => {
             >
               Les intervenants
             </a>
-            <Link
-              to="/programme"
-              className="w-1/2 mx-auto bg-gradient-to-r from-[#8cc6e9] to-[#ff1c6824] border-solid border-2 border-secondary hover:bg-secondary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 mr-1"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Je m'inscris
-            </Link>
             <button
               className="w-1/2 mx-auto bg-gradient-to-l from-[#ff1c66] to-[#8cc5e912] bg-secondary border-solid border-2 border-secondary hover:bg-primary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
               popovertarget="contactForm"

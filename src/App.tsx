@@ -9,7 +9,7 @@ function AppWrapper() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen text-gray-800 font-sans bg-gradient-to-b from-transparent via-tertiary-light to-tertiary">
+      <div className="min-h-screen text-gray-800 font-sans">
         <Header />
         <Router />
         <Footer />

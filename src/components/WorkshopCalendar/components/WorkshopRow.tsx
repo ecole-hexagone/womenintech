@@ -13,13 +13,13 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
   workshop,
   selectedWorkshop,
   onWorkshopSelect,
-  bgColor = "bg-blue-50",
+  bgColor = "bg-tertiary text-white",
 }) => {
   const horaires = workshop.horaires ?? "";
 
   return (
     <tr className={`border-b ${bgColor}`}>
-      <td className="py-3 md:py-4 px-2 md:px-4 font-semibold text-primary flex items-center text-sm md:text-base">
+      <td className="py-3 md:py-4 px-2 md:px-4 font-semibold flex items-center text-sm md:text-base">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-4 w-4 md:h-5 md:w-5 mr-1 text-secondary"

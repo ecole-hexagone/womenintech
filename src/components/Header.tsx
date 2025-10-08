@@ -34,7 +34,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-primary text-white shadow-md z-50">
-      <div className="bg-tertiary text-white text-center py-1 font-bold tracking-widest text-sm">
+      <div className="bg-tertiary text-white text-white text-center py-1 font-bold tracking-widest text-sm">
         <p className="text-white">SAVE THE DATE! Le 27 et 28 Novembre !</p>
       </div>
 
@@ -80,7 +80,7 @@ const Header: React.FC = () => {
           >
             Les intervenants
           </a>
-          <button data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className=" bg-tertiary hover:border-solid hover:border-2 border-tertiary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
+          <button data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className=" bg-tertiary text-white hover:border-solid hover:border-2 border-tertiary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 mr-1"
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
             Je m'inscris
           </button>
           <button
-            className="w-1/2 mx-auto  bg-tertiary hover:border-solid hover:border-2 border-tertiary   text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+            className="w-1/2 mx-auto  bg-tertiary text-white hover:border-solid hover:border-2 border-tertiary   text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
             popovertarget="contactForm"
           >
             <svg

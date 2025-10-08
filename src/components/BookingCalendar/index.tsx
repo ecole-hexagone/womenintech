@@ -79,7 +79,7 @@ const BookingCalendar: React.FC<BookingCalendarProps> = ({
         </svg>
         <h3 className="text-2xl font-bold text-primary">Sessions à la carte</h3>
       </div>
-      <p className="mb-6 text-gray-600 bg-blue-50 p-4 rounded-lg border-l-4 border-primary">
+      <p className="mb-6 text-gray-600 bg-tertiary text-white p-4 rounded-lg border-l-4 border-primary">
         Choisissez vos journées et sélectionnez 2 ateliers de l'après-midi par
         jour. Les conférences du matin sont automatiquement incluses.
         <span className="font-semibold text-purple-600">

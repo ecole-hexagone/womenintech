@@ -10,8 +10,8 @@ export const WorkshopDetails: React.FC<WorkshopDetailsProps> = ({
   workshop,
 }) => {
   return (
-    <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-100">
-      <ul className="list-disc pl-5 space-y-1 text-gray-700">
+    <div className="mt-4 p-4 bg-tertiary text-white rounded-lg border border-blue-100">
+      <ul className="list-disc pl-5 space-y-1 text-white">
         {([1, 2, 3] as const).map((num) => {
           const dotKey = `dot-${num}` as DotKey;
           const content = workshop[dotKey];

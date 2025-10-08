@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-        <div className="border-t bg-tertiary w-full border-white border-opacity-20 pt-8 text-center text-sm">
+        <div className="border-t bg-tertiary text-white w-full border-white border-opacity-20 pt-8 text-center text-sm">
           <div className="flex flex-col md:flex-row items-center justify-center mb-4">
             <div className="flex items-center mb-2 md:mb-0 md:mr-4">
               <img

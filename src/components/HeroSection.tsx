@@ -38,7 +38,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section
       id="hero"
-      className="relative bg-gradient-to-r from-transparent to-tertiary overflow-hidden flex items-center justify-center h-[100%] px-4 sm:px-6 md:px-11 lg:px-0 py-11"
+      className="relative bg-gradient-to-r from-transparent to-primary overflow-hidden flex items-center justify-center h-[100%] px-4 sm:px-6 md:px-11 lg:px-0 py-11"
     >
       <div className="absolute inset-0 z-0">
         <img
@@ -60,7 +60,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 {title}
               </h1>
               {date && (
-                <p className="text-xl md:text-2xl mb-2 bg-tertiary px-4 py-1 rounded-lg transform -rotate-2">
+                <p className="text-xl md:text-2xl mb-2 bg-secondary px-4 py-1 rounded-lg transform -rotate-2">
                   {date}
                 </p>
               )}
@@ -79,7 +79,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <Link
               to={buttonLink}
               onClick={handleClick}
-              className="inline-flex items-center bg-tertiary text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer md:text-xl 2xl:text-2xl"
+              className="inline-flex items-center bg-tertiary text-white text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer md:text-xl 2xl:text-2xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

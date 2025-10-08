@@ -62,7 +62,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
     <div
       className={`border-2 ${
         day === "jour2" ? "border-secondary" : "border-primary"
-      } rounded-xl shadow-md transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg overflow-hidden`}
+      } bg-tertiary text-white rounded-xl shadow-md transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg overflow-hidden`}
     >
       <div
         className={`${
@@ -187,7 +187,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
               </h4>
               <table className="w-full border-collapse min-w-full mb-6">
                 <thead>
-                  <tr className="bg-blue-50 text-primary">
+                  <tr className="bg-tertiary text-white text-primary">
                     <th className="py-3 px-4 text-left border-b border-blue-100 font-bold">
                       Horaire
                     </th>
@@ -203,7 +203,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
                   {morningWorkshops.map((workshop) => (
                     <tr
                       key={workshop.id}
-                      className={`border-b border-blue-50 bg-blue-50 ${
+                      className={`border-b border-blue-50 bg-tertiary text-white ${
                         workshop.highlighted ? "bg-opacity-75" : ""
                       }`}
                     >
@@ -466,7 +466,7 @@ export const DaySection: React.FC<DaySectionProps> = ({
               </table>
 
               {!isDaySelected && (
-                <div className="mt-4 p-3 rounded-lg bg-blue-50 border-l-4 border-primary">
+                <div className="mt-4 p-3 rounded-lg bg-tertiary text-white border-l-4 border-primary">
                   <p className="text-primary text-sm flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

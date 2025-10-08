@@ -244,7 +244,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
                 name="nom"
                 value={formData.nom}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                 placeholder="Votre nom"
                 required
               />
@@ -262,7 +262,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
                 name="prenom"
                 value={formData.prenom}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                 placeholder="Votre prénom"
               />
             </div>
@@ -281,7 +281,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
                 name="fonction"
                 value={formData.fonction}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                 placeholder="Votre fonction"
               />
             </div>
@@ -298,7 +298,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
                 name="societe"
                 value={formData.societe}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+                className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
                 placeholder="Votre société"
               />
             </div>
@@ -316,7 +316,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+              className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
               placeholder="votreemail@example.com"
               required
             />
@@ -334,7 +334,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
               name="telephone"
               value={formData.telephone}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50"
+              className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white"
               placeholder="Votre numéro de téléphone"
             />
           </div>
@@ -351,7 +351,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
               rows={5}
               value={formData.message}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-blue-50 resize-y"
+              className="w-full px-3 py-2 border border-primary rounded-lg focus:ring-primary focus:border-primary text-sm bg-tertiary text-white resize-y"
               placeholder="Votre message..."
               required
             ></textarea>

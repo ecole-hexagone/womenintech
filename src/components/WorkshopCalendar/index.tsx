@@ -36,24 +36,16 @@ const WorkshopCalendar: React.FC<WorkshopCalendarProps> = () => {
   }, {} as WorkshopsByDay);
 
   return (
-    <section className="bg-white w-full md:w-11/12 lg:w-3/4 mx-auto rounded-xl shadow-lg my-10 md:my-20 p-4 md:p-6 mb-8 border-2 border-primary overflow-hidden">
+    <section className="bg-transparent w-full md:w-11/12 lg:w-3/4 mx-auto rounded-xl shadow-lg my-10 md:my-20 p-4 md:p-6 mb-8 border-2 overflow-hidden">
       <div className="flex flex-col items-center mb-6">
         <h3 className="w-auto mx-auto text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-6 md:mb-11 relative inline-block text-center">
-          Votre programme de la{" "}
-          <span className="font-carlson font-black">Women & Tech</span>
+          Votre programme
           <div className="absolute -bottom-3 left-0 right-0 h-1 bg-secondary rounded-full transform -rotate-1"></div>
         </h3>
         <p className="text-sm md:text-base text-center px-4">
-          3 jours pour{" "}
-          <span className="font-semibold">
-            s'inspirer, apprendre et échanger
-          </span>{" "}
-          autour des grandes thématiques RH de demain.
-        </p>
-        <p className="text-sm md:text-base text-center px-4 mt-2">
-          ⚠️ Le programme est susceptible d'évoluer. Nous nous réservons le
-          droit d'y apporter des modifications… et de vous réserver quelques
-          surprises !
+          Venez enrichir vos compétences sur ces 2 jours conçus pour vous et animés par nos intervenantes aux parcours variés.
+Nos expertes d’ACENSI et d’ailleurs ainsi que nos étudiants passionnés partageront retours d’expérience, bonnes pratiques
+et visions innovantes. Deux jours d’échanges concrets, de découvertes et d’inspiration au cœur de l’IA, de la cybersécurité et des métiers de la Tech.
         </p>
       </div>
       <article className="space-y-6 md:space-y-10">
@@ -77,7 +69,7 @@ const WorkshopCalendar: React.FC<WorkshopCalendarProps> = () => {
 
       <div className="mt-6 flex justify-center">
         <button
-          data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className="bg-primary hover:bg-primary-dark text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors duration-300 flex items-center text-sm md:text-base"
+          data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className="inline-flex items-center bg-tertiary text-white text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer md:text-xl 2xl:text-2xl"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +85,7 @@ const WorkshopCalendar: React.FC<WorkshopCalendarProps> = () => {
               d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
-          Je réserve
+          Je m'inscris
         </button>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import workshopData from "../../data/workshops.json";
 import type { WorkshopCalendarProps, WorkshopsByDay, Workshop } from "./types";
 import { DaySection } from "./components/DaySection";
@@ -17,7 +16,6 @@ const WorkshopCalendar: React.FC<WorkshopCalendarProps> = () => {
     )
   );
   const [selectedWorkshop, setSelectedWorkshop] = useState<string | null>(null);
-  const navigate = useNavigate();
 
   const toggleDayExpansion = (day: string) => {
     if (expandedDays.includes(day)) {

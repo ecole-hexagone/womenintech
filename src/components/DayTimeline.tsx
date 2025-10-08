@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import {
   Tent,
   Coffee,
@@ -29,102 +29,105 @@ const DayTimeline: React.FC = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
   const sectionsRef = useRef<(HTMLDivElement | null)[]>([]);
 
-  const timelineEvents: TimelineEvent[] = [
-    {
-      id: "step-1",
-      time: "8:30",
-      title: "ACCUEIL & CAFÉ",
-      description: "Café d'accueil pour commencer la journée en douceur.",
-      icon: <Coffee size={28} />,
-      color: "bg-primary",
-      image:
-        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop&q=80",
-    },
-    {
-      id: "step-2",
-      time: "9:00",
-      title: "CONFÉRENCES MATINALES",
-      description:
-        "Conférences avec des experts RH pour explorer les dernières tendances du secteur.",
-      icon: <Target size={28} />,
-      color: "bg-primary",
-      image:
-        "https://unsplash.com/photos/1-aA2Fadydc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzR8fGNvbmYlQzMlQTlyZW5jZXxmcnwwfHx8fDE3NDg4MTA1MDh8Mg&force=true&w=2400",
-    },
-    {
-      id: "step-3",
-      time: "10:30",
-      title: "PAUSE ÉNERGISANTE",
-      description:
-        "Moment de détente lors d'une pause gourmande pour partager et échanger sur les idées du matin.",
-      icon: <Apple size={28} />,
-      color: "bg-primary",
-      image:
-        "https://unsplash.com/photos/-hx1f4zU_cQ/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjF8fHBhdXNlJTIwZ291cm1hbmRlfGZyfDB8fHx8MTc0ODgxMDgzMXwy&force=true&w=2400",
-    },
-    {
-      id: "step-4",
-      time: "11:00",
-      title: "Deuxième conférence de la matinée",
-      description: "Atelier et/ou conférence selon le planning du jour.",
-      icon: <Brain size={28} />,
-      color: "bg-primary",
-      image:
-        "https://unsplash.com/photos/1-aA2Fadydc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzR8fGNvbmYlQzMlQTlyZW5jZXxmcnwwfHx8fDE3NDg4MTA1MDh8Mg&force=true&w=2400",
-    },
-    {
-      id: "step-5",
-      time: "13:00",
-      title: "DÉJEUNER",
-      description: "Repas convivial pour rencontrer des pairs.",
-      icon: <Utensils size={28} />,
-      color: "bg-primary-light",
-      image:
-        "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&auto=format&fit=crop&q=80",
-    },
-    {
-      id: "step-6",
-      time: "14:00",
-      title: "Premier Atelier de l'après-midi",
-      description: "Atelier selon votre choix",
-      icon: <BarChart2 size={28} />,
-      color: "bg-primary-light",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80",
-    },
-    {
-      id: "step-7",
-      time: "15:30",
-      title: "PAUSE ÉNERGISANTE",
-      description:
-        "Moment de détente lors d'une pause gourmande pour partager et échanger sur les idées de l'après-midi.",
-      icon: <BarChart2 size={28} />,
-      color: "bg-primary-light",
-      image:
-        "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=800&auto=format&fit=crop&q=80",
-    },
-    {
-      id: "step-8",
-      time: "16:00",
-      title: "Dernière session de l'après-midi",
-      description: "Atelier selon votre choix",
-      icon: <RefreshCw size={28} />,
-      color: "bg-primary-light",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80",
-    },
-    {
-      id: "step-9",
-      time: "18:00",
-      title: "COCKTAIL NETWORK",
-      description:
-        "Échanges autour d'un verre dans une ambiance détendue (spécial Jour 3 uniquement).",
-      icon: <Wine size={28} />,
-      color: "bg-primary-light",
-      image:
-        "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&auto=format&fit=crop&q=80",
-    },
-  ];
+  const timelineEvents: TimelineEvent[] = useMemo(
+    () => [
+      {
+        id: "step-1",
+        time: "8:30",
+        title: "ACCUEIL & CAFÉ",
+        description: "Café d'accueil pour commencer la journée en douceur.",
+        icon: <Coffee size={28} />,
+        color: "bg-primary",
+        image:
+          "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop&q=80",
+      },
+      {
+        id: "step-2",
+        time: "9:00",
+        title: "CONFÉRENCES MATINALES",
+        description:
+          "Conférences avec des experts RH pour explorer les dernières tendances du secteur.",
+        icon: <Target size={28} />,
+        color: "bg-primary",
+        image:
+          "https://unsplash.com/photos/1-aA2Fadydc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzR8fGNvbmYlQzMlQTlyZW5jZXxmcnwwfHx8fDE3NDg4MTA1MDh8Mg&force=true&w=2400",
+      },
+      {
+        id: "step-3",
+        time: "10:30",
+        title: "PAUSE ÉNERGISANTE",
+        description:
+          "Moment de détente lors d'une pause gourmande pour partager et échanger sur les idées du matin.",
+        icon: <Apple size={28} />,
+        color: "bg-primary",
+        image:
+          "https://unsplash.com/photos/-hx1f4zU_cQ/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjF8fHBhdXNlJTIwZ291cm1hbmRlfGZyfDB8fHx8MTc0ODgxMDgzMXwy&force=true&w=2400",
+      },
+      {
+        id: "step-4",
+        time: "11:00",
+        title: "Deuxième conférence de la matinée",
+        description: "Atelier et/ou conférence selon le planning du jour.",
+        icon: <Brain size={28} />,
+        color: "bg-primary",
+        image:
+          "https://unsplash.com/photos/1-aA2Fadydc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MzR8fGNvbmYlQzMlQTlyZW5jZXxmcnwwfHx8fDE3NDg4MTA1MDh8Mg&force=true&w=2400",
+      },
+      {
+        id: "step-5",
+        time: "13:00",
+        title: "DÉJEUNER",
+        description: "Repas convivial pour rencontrer des pairs.",
+        icon: <Utensils size={28} />,
+        color: "bg-primary-light",
+        image:
+          "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&auto=format&fit=crop&q=80",
+      },
+      {
+        id: "step-6",
+        time: "14:00",
+        title: "Premier Atelier de l'après-midi",
+        description: "Atelier selon votre choix",
+        icon: <BarChart2 size={28} />,
+        color: "bg-primary-light",
+        image:
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80",
+      },
+      {
+        id: "step-7",
+        time: "15:30",
+        title: "PAUSE ÉNERGISANTE",
+        description:
+          "Moment de détente lors d'une pause gourmande pour partager et échanger sur les idées de l'après-midi.",
+        icon: <BarChart2 size={28} />,
+        color: "bg-primary-light",
+        image:
+          "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=800&auto=format&fit=crop&q=80",
+      },
+      {
+        id: "step-8",
+        time: "16:00",
+        title: "Dernière session de l'après-midi",
+        description: "Atelier selon votre choix",
+        icon: <RefreshCw size={28} />,
+        color: "bg-primary-light",
+        image:
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80",
+      },
+      {
+        id: "step-9",
+        time: "18:00",
+        title: "COCKTAIL NETWORK",
+        description:
+          "Échanges autour d'un verre dans une ambiance détendue (spécial Jour 3 uniquement).",
+        icon: <Wine size={28} />,
+        color: "bg-primary-light",
+        image:
+          "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&auto=format&fit=crop&q=80",
+      },
+    ],
+    [],
+  );
 
   useEffect(() => {
     const options = {

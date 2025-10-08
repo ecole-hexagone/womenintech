@@ -16,9 +16,6 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
   bgColor = "bg-blue-50",
 }) => {
   const horaires = workshop.horaires ?? "";
-  const intervenant = workshop.intervenant && workshop.intervenant.trim() !== ""
-    ? workshop.intervenant
-    : "À annoncer";
 
   return (
     <tr className={`border-b ${bgColor}`}>
@@ -96,27 +93,6 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
           <WorkshopDetails workshop={workshop} />
         )}
       </td>
-      {/*<td className="py-3 md:py-4 px-2 md:px-4 text-sm md:text-base">
-        <div className="flex items-center">
-          <span className="bg-primary text-white p-1 rounded-full mr-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-              />
-            </svg>
-          </span>
-          <span className="font-semibold">{intervenant}</span>
-        </div>
-      </td>*/}
     </tr> 
   );
 };

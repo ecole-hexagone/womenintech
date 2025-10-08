@@ -77,7 +77,7 @@ const SpeakersSection: React.FC = () => {
           <h3 className="text-lg text-white max-w-3xl mx-auto">
             Deux femmes, Deux parcours d’exception, une même passion : la Tech
           </h3>
-          <p class="text-white">
+          <p className="text-white">
             Nos expertes d’ACENSI vous dévoilent leurs expériences, leurs défis et leur regard sur l’IA et la cybersécurité.
           </p>
         </div>

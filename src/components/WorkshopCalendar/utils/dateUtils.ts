@@ -22,7 +22,7 @@ const parseDate = (date: string): Date | null => {
 
   const isoMatch = date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
   if (isoMatch) {
-    const [_, year, month, day] = isoMatch;
+    const [, year, month, day] = isoMatch;
     return new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
   }
 

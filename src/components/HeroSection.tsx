@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 interface HeroSectionProps {
   title: string;
-  paragraphEmphasized1: String;
-  paragraphEmphasized2: String;
+  paragraphEmphasized1: string;
+  paragraphEmphasized2: string;
   paragraph1: string;
   paragraph2: string;
   buttonText: string;

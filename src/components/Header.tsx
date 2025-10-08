@@ -3,11 +3,12 @@ import { useState } from "react";
 import ContactForm from "./ContactForm";
 
 declare module "react" {
-  interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
+  interface ButtonHTMLAttributes<ElementType = Element>
+    extends HTMLAttributes<ElementType> {
     popovertarget?: string;
     popoveraction?: string;
   }
-  interface HTMLAttributes<T> {
+  interface HTMLAttributes<ElementType = Element> {
     popover?: string;
   }
 }
@@ -34,7 +35,7 @@ const Header: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-primary text-white shadow-md z-50">
       <div className="bg-tertiary text-white text-center py-1 font-bold tracking-widest text-sm">
-        <p class="text-white">SAVE THE DATE! Le 27 et 28 Novembre !</p>
+        <p className="text-white">SAVE THE DATE! Le 27 et 28 Novembre !</p>
       </div>
 
       <div className="container w-full max-w-[100rem] mx-auto p-4 flex justify-between items-center md:h-28 ">

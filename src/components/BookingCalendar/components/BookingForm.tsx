@@ -176,7 +176,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                 result.error || "Une erreur est survenue lors de l'envoi."
               );
             }
-          } catch (jsonError) {
+          } catch {
             setSubmitSuccess(true);
           }
         } else {

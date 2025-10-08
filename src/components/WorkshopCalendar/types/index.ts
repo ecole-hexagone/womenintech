@@ -5,7 +5,6 @@ export interface Workshop {
   horaires?: string;
   theme?: string;
   titre?: string;
-  intervenant?: string;
   format?: string;
   "dot-1"?: string;
   "dot-2"?: string;

@@ -15,7 +15,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
   onWorkshopSelect,
   bgColor = "bg-blue-50",
 }) => {
-  const horaires = workshop.horaires ?? "À préciser";
+  const horaires = workshop.horaires ?? "";
   const intervenant = workshop.intervenant && workshop.intervenant.trim() !== ""
     ? workshop.intervenant
     : "À annoncer";
@@ -96,7 +96,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
           <WorkshopDetails workshop={workshop} />
         )}
       </td>
-      <td className="py-3 md:py-4 px-2 md:px-4 text-sm md:text-base">
+      {/*<td className="py-3 md:py-4 px-2 md:px-4 text-sm md:text-base">
         <div className="flex items-center">
           <span className="bg-primary text-white p-1 rounded-full mr-2">
             <svg
@@ -116,7 +116,7 @@ export const WorkshopRow: React.FC<WorkshopRowProps> = ({
           </span>
           <span className="font-semibold">{intervenant}</span>
         </div>
-      </td>
-    </tr>
+      </td>*/}
+    </tr> 
   );
 };

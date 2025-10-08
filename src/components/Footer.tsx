@@ -4,11 +4,11 @@ const Footer: React.FC = () => {
   return (
     <footer
       id="contact"
-      className="bg-gradient-to-b from-[#8cc6e9] to-[#0e376a] text-white pt-16 pb-8 relative overflow-hidden"
+      className="bg-primary text-white pt-16 relative overflow-hidden"
     >
-      <div className="absolute top-0 left-0 w-full h-16 bg-blue-400 opacity-10 transform -skew-y-3"></div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 bg-[#FF1C66] rounded-full opacity-5 -mr-32 -mb-32"></div>
-      <div className="absolute top-20 right-20 w-32 h-32 bg-[#FF1C66] rounded-full opacity-5"></div>
+      <div className="absolute top-0 left-0 w-full h-16 opacity-10 transform -skew-y-3"></div>
+      <div className="absolute bottom-0 right-0 w-64 h-64  rounded-full opacity-5 -mr-32 -mb-32"></div>
+      <div className="absolute top-20 right-20 w-32 h-32 rounded-full opacity-5"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-8 mb-12">
@@ -140,42 +140,18 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <div className="border-t border-white border-opacity-20 pt-8 text-center text-sm">
+      </div>
+        <div className="border-t bg-tertiary w-full border-white border-opacity-20 pt-8 text-center text-sm">
           <div className="flex flex-col md:flex-row items-center justify-center mb-4">
             <div className="flex items-center mb-2 md:mb-0 md:mr-4">
               <img
-                src="/logos/logo-learns.svg"
-                alt="Learns RH"
+                src="/logos/logo-hexa.svg"
+                alt="École Hexagone"
                 className="h-8 mr-3"
-              />
-            </div>
-            <span className="hidden md:inline mx-2">|</span>
-            <div className="flex items-center">
-              <img
-                src="logos//logo-pragma.webp"
-                alt="Châteauform'"
-                className="w-full h-20 mr-3"
-              />
-            </div>
-            <span className="hidden md:inline mx-2">|</span>
-            <div className="flex items-center">
-              <img
-                src="logos//logo-chateauform-noBG.webp"
-                alt="Châteauform'"
-                className="w-full h-28 mr-3"
               />
             </div>
           </div>
           <p>
-            &copy; 2025 HR Summer Camp. Tous droits réservés. |{" "}
-            <Link
-              to="/cgv"
-              className="hover:text-[#FF1C66] transition-colors duration-300 cursor-pointer underline"
-            >
-              Conditions Générales de Vente
-            </Link>{" "}
-            |{" "}
             <Link
               to="/mentions-legales"
               className="hover:text-[#FF1C66] transition-colors duration-300 cursor-pointer underline"
@@ -191,7 +167,6 @@ const Footer: React.FC = () => {
             </Link>
           </p>
         </div>
-      </div>
     </footer>
   );
 };

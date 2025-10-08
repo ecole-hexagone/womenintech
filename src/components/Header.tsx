@@ -3,12 +3,11 @@ import { useState } from "react";
 import ContactForm from "./ContactForm";
 
 declare module "react" {
-  interface ButtonHTMLAttributes<ElementType = Element>
-    extends HTMLAttributes<ElementType> {
+  interface ButtonHTMLAttributes<T> {
     popovertarget?: string;
     popoveraction?: string;
   }
-  interface HTMLAttributes<ElementType = Element> {
+  interface HTMLAttributes<T> {
     popover?: string;
   }
 }

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 interface HeroSectionProps {
   title: string;
   paragraphEmphasized1: string;
@@ -20,21 +18,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   paragraph1,
   paragraph2,
   buttonText,
-  buttonLink,
   backgroundImage = "program/hero-program.webp",
   date,
-  scrollToId,
 }) => {
-  const handleClick = (e: React.MouseEvent) => {
-    if (scrollToId) {
-      e.preventDefault();
-      const element = document.getElementById(scrollToId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
-
   return (
     <section
       id="hero"

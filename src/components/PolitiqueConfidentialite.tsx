@@ -1,18 +1,18 @@
 const PolitiqueConfidentialite: React.FC = () => {
   return (
     <div className="container mx-auto px-4 pb-12 pt-28 md:pt-48 max-w-4xl">
-      <h1 className="text-4xl font-bold text-[#8cc6e9] mb-8 text-center">
+      <h1 className="text-4xl font-bold text-primary mb-8 text-center">
         Politique de confidentialité
       </h1>
 
       <div className="space-y-8">
         <section className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-[#8cc6e9] mb-4">
-            Protection des données personnelles Learns
+          <h2 className="text-2xl font-semibold text-primary mb-4">
+            Protection des données personnelles CALTEA
           </h2>
-          <div className="space-y-4 text-gray-700">
+          <div className="space-y-4 text-tertiary">
             <p>
-              Soucieux de protéger la vie privée de ses clients, Learns s'engage
+              Soucieux de protéger la vie privée de ses clients, CALTEA s'engage
               dans la protection des données personnelles. La présente Charte a
               pour objet de rappeler nos principes et nos actions visant au
               respect de la réglementation applicable en matière de protection
@@ -23,11 +23,11 @@ const PolitiqueConfidentialite: React.FC = () => {
 
         {/* Cookies */}
         <section className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-[#8cc6e9] mb-4">
+          <h2 className="text-2xl font-semibold text-primary mb-4">
             Informations sur les Cookies
           </h2>
-          <div className="space-y-4 text-gray-700">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          <div className="space-y-4 text-primary">
+            <h3 className="text-xl font-semibold text-primary mb-2">
               Généralités sur les cookies
             </h3>
             <p>
@@ -42,10 +42,10 @@ const PolitiqueConfidentialite: React.FC = () => {
             </p>
 
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Cookies utilisés par le site web de Learns
+              Cookies utilisés par le site web de CALTEA
             </h3>
             <p>
-              Les cookies utilisés par (https://learnsrh.fr) permettent de
+              Les cookies utilisés par (https://womenandtechfr) permettent de
               personnaliser le contenu du site afin d'optimiser l'expérience du
               visiteur ou du client. Ils permettent également d'offrir des
               fonctionnalités relatives aux médias sociaux et d'analyser le
@@ -95,7 +95,7 @@ const PolitiqueConfidentialite: React.FC = () => {
 
         {/* Paramétrage des navigateurs */}
         <section className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-[#8cc6e9] mb-4">
+          <h2 className="text-2xl font-semibold text-primary mb-4">
             Paramétrage des différents navigateurs
           </h2>
           <div className="space-y-4 text-gray-700">
@@ -118,7 +118,7 @@ const PolitiqueConfidentialite: React.FC = () => {
                   fichiers dans l'ordre alphabétique.
                 </li>
                 <li>
-                  Sélectionnez le ou les cookies comprenant le nom «Learns » et
+                  Sélectionnez le ou les cookies comprenant le nom «CALTEA » et
                   supprimez-les.
                 </li>
                 <li>
@@ -142,7 +142,7 @@ const PolitiqueConfidentialite: React.FC = () => {
                   sécurité » et cliquez sur » Gérer les données ».
                 </li>
                 <li>
-                  Repérez les fichiers qui contiennent le nom « Learns »
+                  Repérez les fichiers qui contiennent le nom « CALTEA »
                   Sélectionnez-les et supprimez-les.
                 </li>
               </ol>
@@ -160,7 +160,7 @@ const PolitiqueConfidentialite: React.FC = () => {
                 <li>Cliquez sur Sécurité.</li>
                 <li>Cliquez sur Afficher les cookies.</li>
                 <li>
-                  Sélectionnez les cookies qui contiennent le nom « Learns » et
+                  Sélectionnez les cookies qui contiennent le nom « CALTEA » et
                   cliquez sur Effacer ou sur Tout effacer.
                 </li>
                 <li>Après avoir supprimé les cookies, cliquez sur Terminé.</li>
@@ -185,12 +185,12 @@ const PolitiqueConfidentialite: React.FC = () => {
 
         {/* Charte de protection des données */}
         <section className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-[#8cc6e9] mb-4">
-            CHARTE LEARNS SUR LA PROTECTION DES DONNEES PERSONNELLES
+          <h2 className="text-2xl font-semibold text-primary mb-4">
+            CHARTE CALTEA SUR LA PROTECTION DES DONNEES PERSONNELLES
           </h2>
           <div className="space-y-6 text-gray-700">
             <p>
-              Soucieux de protéger la vie privée de ses clients, LEARNS s'engage
+              Soucieux de protéger la vie privée de ses clients, CALTEA s'engage
               dans la protection des données personnelles.
             </p>
             <p>
@@ -208,7 +208,7 @@ const PolitiqueConfidentialite: React.FC = () => {
                 En application du Règlement (UE) 2016/679 du 27 avril 2016
                 relatif à la protection des personnes physiques à l'égard des
                 traitements de données à caractère personnel, les traitements de
-                vos données personnelles effectués par LEARNS s'appuient sur les
+                vos données personnelles effectués par CALTEA s'appuient sur les
                 principes fondamentaux suivants :
               </p>
               <ul className="list-disc pl-6 space-y-2 mt-2">
@@ -250,7 +250,7 @@ const PolitiqueConfidentialite: React.FC = () => {
                 personnelles
               </h3>
               <p>
-                Les données collectées font l'objet d'un traitement par LEARNS
+                Les données collectées font l'objet d'un traitement par CALTEA
                 pour les finalités suivantes :
               </p>
               <ul className="list-disc pl-6 space-y-2 mt-2">
@@ -272,7 +272,7 @@ const PolitiqueConfidentialite: React.FC = () => {
               <p>Les destinataires des données personnelles sont :</p>
               <ul className="list-disc pl-6 space-y-2 mt-2">
                 <li>
-                  Les services internes LEARNS en charge de la gestion de la
+                  Les services internes CALTEA en charge de la gestion de la
                   formation
                 </li>
                 <li>
@@ -291,7 +291,7 @@ const PolitiqueConfidentialite: React.FC = () => {
                 5- Durée de conservation des données
               </h3>
               <p>
-                Les données personnelles collectées et traitées par LEARNS pour
+                Les données personnelles collectées et traitées par CALTEA pour
                 l'exécution d'une prestation de formation sont conservées
                 pendant la durée strictement nécessaire à la gestion de la
                 formation. Elles font ensuite l'objet d'un archivage jusqu'à
@@ -304,7 +304,7 @@ const PolitiqueConfidentialite: React.FC = () => {
                 6- Mesures de sécurité
               </h3>
               <p>
-                LEARNS prend des mesures techniques et organisationnelles pour
+                CALTEA prend des mesures techniques et organisationnelles pour
                 interdire l'accès non autorisé ou la divulgation de vos données
                 :
               </p>
@@ -338,7 +338,7 @@ const PolitiqueConfidentialite: React.FC = () => {
               <p className="mt-4">
                 Pour exercer vos droits, vous pouvez contacter notre DPO à
                 l'adresse suivante :<br />
-                DPO, 17 rue Wauthier 78100 Saint Germain en Laye
+                DPO, 12 place du colonel Beltrame, Versailles, 78000.
               </p>
             </div>
           </div>

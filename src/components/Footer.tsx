@@ -84,7 +84,7 @@ Une expérience <span className="font-semibold">immersive, ouverte à toutes et 
                     />
                   </svg>
                   <span>
-                     12, parvis du, Parv. Colonel Arnaud Beltrame 1er étage, 78000 Versailles.
+                     12, parvis du Colonel Arnaud Beltrame 1er étage, 78000 Versailles.
                   </span>
                 </li>
                 <li className="flex items-start">

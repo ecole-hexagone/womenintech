@@ -72,13 +72,6 @@ const Header: React.FC = () => {
           >
             Accueil
           </Link>
-          <a
-            href="/#speakers"
-            onClick={handleSpeakersClick}
-            className="text-white hover:text-secondary transition-colors duration-300 whitespace-nowrap cursor-pointer"
-          >
-            Les intervenants
-          </a>
           <button data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className=" bg-tertiary text-white hover:border-solid hover:border-2 border-tertiary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -93,24 +86,6 @@ const Header: React.FC = () => {
               />
             </svg>
             Je m'inscris
-          </button>
-          <button
-            className="w-1/2 mx-auto  bg-tertiary text-white hover:border-solid hover:border-2 border-tertiary   text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
-            popovertarget="contactForm"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 mr-1"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Demande d'information
           </button>
         </nav>
         <div className="md:hidden flex items-center">
@@ -138,13 +113,6 @@ const Header: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-primary-light w-full">
           <nav className="flex flex-col p-4 space-y-4">
-            <Link
-              to="/"
-              className="text-white hover:text-secondary transition-colors duration-300"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Accueil
-            </Link>
             <a
               href="/#speakers"
               onClick={(e) => {

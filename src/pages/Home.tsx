@@ -17,9 +17,6 @@ const Home: React.FC = () => {
         date="Le 27 & 28 Novembre 2025"
       />
       <WorkshopCalendar />
-      <section id="speakers">
-        <SpeakersSection />
-      </section>
     </div>
   );
 };

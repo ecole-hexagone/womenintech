@@ -74,10 +74,10 @@ const SpeakersSection: React.FC = () => {
             ACENSI <span className="font-carlson">Speech</span>
             <div className="absolute -bottom-3 left-0 right-0 h-1 bg-secondary-light rounded-full transform -rotate-1"></div>
           </h2>
-          <h3 className="text-lg text-white max-w-3xl mx-auto">
+          <h3 className="text-lg text-primary max-w-3xl mx-auto">
             Deux femmes, Deux parcours d’exception, une même passion : la Tech
           </h3>
-          <p className="text-white">
+          <p className="text-primary">
             Nos expertes d’ACENSI vous dévoilent leurs expériences, leurs défis et leur regard sur l’IA et la cybersécurité.
           </p>
         </div>

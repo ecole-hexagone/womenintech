@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
             <div className="text-2xl font-bold tracking-tight mb-6 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 mr-2 text-[#FF1C66]"
+                className="h-8 w-8 mr-2 text-secondary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -30,27 +30,16 @@ const Footer: React.FC = () => {
               </svg>
               <div>
                 <span className="text-white font-carlson">WOMEN</span>
-                <span className="text-[#FF1C66] italic font-cursive">
+                <span className="text-secondary italic font-cursive">
                   in
                 </span>
                 <span className="text-white">TECH</span>
               </div>
             </div>
             <p className="mb-6 bg-white text-white bg-opacity-10 p-4 rounded-lg">
-              <span className="font-semibold">
-                Votre nouveau rendez-vous incontournable pour le développement
-                des compétences RH.
-              </span>
-              <br />
-              Une première édition pensée comme une vraie parenthèse avant l’été
-              : inspiration, formation de qualité et convivialité garantie. Une
-              expérience immersive pour prendre de la hauteur, faire le plein
-              d’idées concrètes et tisser des liens durables.
-              <br />
-              <span className="font-bold">
-                HR Summer Session 2025 : l’événement à ne pas manquer pour
-                préparer sereinement la rentrée RH.
-              </span>
+               Un événement engagé pour valoriser les <span className="font-semibold">talents féminins</span>  dans la tech.
+Deux jours pour <span className="font-semibold">s’informer, s’inspirer et se projeter</span> dans les métiers du numérique, en compagnie d’<span className="font-semibold">expertes</span> passionnées et de professionnels du secteur.
+Une expérience <span className="font-semibold">immersive, ouverte à toutes et à tous</span>, pour oser l’IT, découvrir ses opportunités et construire ensemble une tech plus inclusive.
             </p>
           </div>
           <div>
@@ -95,11 +84,7 @@ const Footer: React.FC = () => {
                     />
                   </svg>
                   <span>
-                    Learning Lab La Défense
-                    <br />
-                    Galerie du passage de l'Arche
-                    <br />
-                    40 Passage de l'Arche, 92800 Puteaux
+                     12, parvis du, Parv. Colonel Arnaud Beltrame 1er étage, 78000 Versailles.
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -117,7 +102,7 @@ const Footer: React.FC = () => {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <a href="tel:+33180873180">+33 1 80 87 31 80</a>
+                  <a href="tel:+33188883290">+33 1 88 88 32 90</a>
                 </li>
                 <li className="flex items-start">
                   <svg

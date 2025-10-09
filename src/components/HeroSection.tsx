@@ -76,9 +76,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 </span>
               </p>
             </div>
-            <Link
-              to={buttonLink}
-              onClick={handleClick}
+            <button
+              data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation
               className="inline-flex items-center bg-tertiary text-white text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer md:text-xl 2xl:text-2xl"
             >
               <svg
@@ -94,7 +93,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 />
               </svg>
               {buttonText}
-            </Link>
+            </button>
           </div>
         </div>
         <div className="gap-38 span-col-1  flex flex-col justify-between pt-11 relative z-10">

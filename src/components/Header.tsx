@@ -15,7 +15,7 @@ const Header: React.FC = () => {
         </a>
         </div>
         <nav className="flex items-center space-x-8 my-5 md:my-0 md:mr-11">
-          <button data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className=" bg-tertiary text-white hover:border-solid hover:border-2 border-tertiary text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
+          <button data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className=" bg-secondary hover:bg-transparent text-primary hover:text-secondary hover:border-solid hover:border-2 border-secondary py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 mr-1"

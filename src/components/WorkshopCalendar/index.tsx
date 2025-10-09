@@ -67,7 +67,7 @@ et visions innovantes. Deux jours d’échanges concrets, de découvertes et d�
 
       <div className="mt-6 flex justify-center">
         <button
-          data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className="inline-flex items-center bg-tertiary text-white text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer md:text-xl 2xl:text-2xl"
+          data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className="inline-flex items-center bg-secondary hover:bg-transparent text-white hover:text-tertiary hover:border-solid hover:border-2 border-secondary hover:border-tertiary font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer md:text-xl 2xl:text-2xl"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

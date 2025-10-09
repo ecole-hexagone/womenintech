@@ -32,18 +32,16 @@ const CookieBanner: React.FC = () => {
 
   return (
     <>
-      {/* Overlay flouté */}
-      <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40" />
+      <div className="fixed inset-0 bg-primary bg-opacity-50 backdrop-blur-sm z-40" />
 
-      {/* Modal centré */}
       <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
-        <div className="bg-white rounded-lg shadow-xl max-w-2xl w-full transform transition-all">
+        <div className="bg-tertiary rounded-lg shadow-xl max-w-2xl w-full transform transition-all">
           <div className="p-6">
-            <h2 className="text-2xl font-semibold text-[#8cc6e9] mb-4">
+            <h2 className="text-2xl font-semibold text-white mb-4">
               Politique de cookies
             </h2>
             <div className="space-y-4">
-              <p className="text-gray-700">
+              <p className="text-white">
                 Nous utilisons des cookies pour améliorer votre expérience sur
                 notre site. En continuant à naviguer, vous acceptez
                 l'utilisation des cookies. Pour plus d'informations, consultez
@@ -58,16 +56,16 @@ const CookieBanner: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-end mt-6">
                 <button
-                  onClick={handleReject}
-                  className="px-6 py-2 text-gray-600 hover:text-gray-800 transition-colors duration-300 border border-gray-300 rounded-md hover:bg-gray-50"
-                >
-                  Refuser
-                </button>
-                <button
                   onClick={handleAccept}
-                  className="px-6 py-2 bg-[#8cc6e9] text-white rounded-md hover:bg-[#67b8d8] transition-colors duration-300"
+                  className="px-6 py-2 transition-colors duration-300 border border-primary hover:border-white hover:text-white rounded-md bg-secondary hover:bg-primary"
                 >
                   Accepter
+                </button>
+                <button
+                  onClick={handleReject}
+                  className="px-6 py-2 text-white rounded-md  border-white border hover:bg-primary transition-colors duration-300"
+                >
+                  Refuser
                 </button>
               </div>
             </div>

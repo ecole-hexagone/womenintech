@@ -70,3 +70,8 @@ a {
   padding: 2rem;
   text-align: center;
 }
+
+button{
+  background-color:#ffd200;
+  color: #310046;
+}

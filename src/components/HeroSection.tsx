@@ -64,7 +64,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
             <button
               data-tally-open="mV2xZv" data-tally-emoji-text="👋" data-tally-emoji-animation
-              className="inline-flex items-center bg-tertiary text-white text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer md:text-xl 2xl:text-2xl"
+              className="inline-flex items-center bg-secondary text-white  font-bold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer md:text-xl 2xl:text-2xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

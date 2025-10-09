@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function ButtonBrochure() {
   return (
-    <button className="bg-secondary hover:bg-secondary-light text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
+    <button className= hover:bg-secondary-light text-white py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap flex items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5 mr-1"

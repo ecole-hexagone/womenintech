@@ -46,7 +46,7 @@ Une expérience <span className="font-semibold">immersive, ouverte à toutes et 
             <h3 className="text-lg font-bold mb-6 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 mr-2 text-[#FF1C66]"
+                className="h-5 w-5 mr-2 text-secondary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -65,7 +65,7 @@ Une expérience <span className="font-semibold">immersive, ouverte à toutes et 
                 <li className="flex items-start">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mt-1 mr-3 text-[#FF1C66]"
+                    className="h-5 w-5 mt-1 mr-3 text-secondary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -90,7 +90,7 @@ Une expérience <span className="font-semibold">immersive, ouverte à toutes et 
                 <li className="flex items-start">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mt-1 mr-3 text-[#FF1C66]"
+                    className="h-5 w-5 mt-1 mr-3 text-secondary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -107,7 +107,7 @@ Une expérience <span className="font-semibold">immersive, ouverte à toutes et 
                 <li className="flex items-start">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mt-1 mr-3 text-[#FF1C66]"
+                    className="h-5 w-5 mt-1 mr-3 text-secondary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -139,14 +139,14 @@ Une expérience <span className="font-semibold">immersive, ouverte à toutes et 
           <p>
             <Link
               to="/mentions-legales"
-              className="hover:text-[#FF1C66] transition-colors duration-300 cursor-pointer underline"
+              className="hover:text-secondary transition-colors duration-300 cursor-pointer underline"
             >
               Mentions légales
             </Link>{" "}
             |{" "}
             <Link
               to="/politique-de-confidentialite"
-              className="hover:text-[#FF1C66] transition-colors duration-300 cursor-pointer underline"
+              className="hover:text-secondary transition-colors duration-300 cursor-pointer underline"
             >
               Politique de confidentialité
             </Link>

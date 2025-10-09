@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               <div>
                 <span className="text-white font-carlson">WOMEN</span>
                 <span className="text-secondary italic font-cursive">
-                  in
+                  &
                 </span>
                 <span className="text-white">TECH</span>
               </div>
